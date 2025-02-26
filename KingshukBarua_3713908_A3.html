@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP804 – Assessment Task 3 – Assignment 1</title>
+
+        <!-- Internal CSS for Styling -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Styling for Student Info */
+        #student-info {
+            color: #123456;
+            border: 1px solid #abcdef;
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Styling for Subject Info */
+        #subject-info {
+            color: #654321;
+            border: 2px dashed #fedcba;
+            background-color: #e0e0e0;
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Styling for Assignment Info */
+        #assignment-info {
+            color: #f1f1f1;
+            border: 3px dotted #abcabc;
+            background-color: #868685;
+            padding: 20px;
+            text-align: left;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #231172; 
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border-left: 2px solid rgba(234, 238, 241, 0.842);
+        }
+
+        th:first-child {
+            background-color: #231172;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .date-column {
+            border-left: 2px solid white;
+        }
+
+        tr:nth-child(odd):not(:first-child) {
+        background-color: #e0e0e0; 
+        }
+
+        tr:nth-child(even):not(:first-child) {
+        background-color: #f9f9f9 
+        }
+
+        a {
+            color: #0909e2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animal Images */
+        .animalImage {
+            display: none; /* Hide all animal images initially */
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Task 1: Use CSS to display the following information -->
+
+        <h1>Task 1: Use CSS to display the following information</h1>
+        </script>
+        <h2 id="student-info">3713908 Kingshuk Barua </h2>
+        <h3 id="subject-info">COMP804: Web Security</h3>
+        <h4 id="assignment-info">Assignment 1, due at the end of Week 5</h4>    
+    </script>   
+    
+    
+    <!-- Task 2: Use CSS to style a table -->
+
+        <h1>Task 2: Use CSS to style a table</h1>
+    
+        <h5>Please have a look at this website for <a href="https://www.uow.edu.au/student/dates/#d.en.186577">Key dates - University of Wollongong - UOW</a></h5>
+
+     <table>
+        <tr>
+            <th>Activity</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>First day to enrol for re-enrolling (continuing students)</td>
+            <td class="date-column">21 Nov 2022</td>
+        </tr>
+        <tr>
+            <td>Orientation</td>
+            <td class="date-column">18 Jul 2023</td>
+        </tr>
+        <tr>
+            <td>Lectures Commence (weeks 1-9)</td>
+            <td class="date-column">24 Jul - 22 Sep 2023</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol/add subjects yourself</td>
+            <td class="date-column">04 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>Last day to enrol/add subjects with Head of Students approval</td>
+            <td class="date-column">11 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>
+                <h2>CENSUS DATE</h2>
+                <ul class="square">
+                    <li>Fees due</li>
+                    <li>Last day to withdraw from subject/s without paying for them</li>
+                    <li>HECS/FEE HELP debt reporting date</li>
+                    <li>Last day to change HECS/FEE HELP billing option</li>
+                </ul>
+                <a href="https://uowedu.service-now.com/askuow?id=kb_article_view&sysparm_article=KB0012659">Learn more about Census date ></a>
+            </td>
+            <td class="date-column">31 Aug 2023</td>
+        </tr>
+        <tr>
+            <td>Students Services and Amenities Fees Due</td>
+            <td class="date-column">01 Sep 2023</td>
+        </tr>
+    </table>
+
+
+    <!-- Task 3: HTML & CSS -->
+
+    <h1>Task 3: HTML & CSS</h1>
+
+        <table id="Web_Attack" style="border-style: dotted; border-collapse: collapse; border-spacing: 10px; font-size: 20px; text-align: center;">
+        <tr style="background-color: #00000010; color: navy; font-size: 40px;">
+            <th class="Name" style="background-color: rgb(216, 79, 79); padding: 20px; text-align: center; border-style: dashed;">Name</th>
+            <th class="Web Attacks" style="background-color: rgb(216, 79, 79); padding: 20px; text-align: center; border-style: dashed;">Web Attacks</th>
+        </tr>
+
+        <!-- Web attack 1: DDoS -->
+        <tr>
+            <td class="oddRow" style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center;">
+                1. DDoS attack
+                <br>
+                <img src="DDoS.png" width="400px" alt="DDoS attack">
+                <br>
+                Source: <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/">What is a DDoS attack?</a>
+            </td>
+            <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: left;">
+                <li>DDoS attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.
+                 <br>
+                <li>DDoS attacks achieve effectiveness by utilizing multiple compromised computer systems as sources of attack traffic.
+                <br>
+                <li>From a high level, a DDoS attack is like an unexpected traffic jam clogging up the highway, preventing regular traffic from arriving at its destination.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/">What is a DDoS attack?</a>
+            </td>
+        </tr>
+        
+        <!-- Web attack 2: XSS -->
+        <tr>
+            <td class="evenRow" style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center;">
+                2. Cross Site Scripting
+                <br>
+                <img src="XSS.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://portswigger.net/web-security/cross-site-scripting/preventing/">What is cross-site scripting?</a>
+            </td>
+            <td style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: left;">
+                <li>Cross-site scripting (XSS) is an exploit where the attacker attaches code onto a legitimate website that will execute when the victim loads the website. 
+                <br>
+                <li>That malicious code can be inserted in several ways. Most popularly, it is either added to the end of a url or posted directly onto a page that displays user-generated content.
+                <br>
+                <li>In more technical terms, cross-site scripting is a client-side code injection attack.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://portswigger.net/web-security/cross-site-scripting/preventing/">What is cross-site scripting?</a>
+            </td>
+        </tr>
+
+
+        <!-- Web attack 3: SQL Injection -->
+          <tr>
+            <td class="oddRow" style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center;">
+                3. SQL Injection
+                <br>
+                <img src="SQL.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://portswigger.net/web-security/sql-injection/">What is SQL injection</a>
+            </td>
+            <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: left;">
+                <li>SQL injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database. 
+                <br>
+                <li>This might include data that belongs to other users, or any other data that the application can access.
+                <br>
+                <li>In some situations, an attacker can escalate a SQL injection attack to compromise the underlying server or other back-end infrastructure.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://portswigger.net/web-security/sql-injection/">What is SQL injection</a>
+            </td>
+        </tr>
+        
+
+        <!-- Web attack 4: Cross-site request forgery (csrf) -->
+        <tr>
+            <td class="evenRow" style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center;">
+                4. Cross-site request forgery (csrf)
+                <br>
+                <img src="csrf.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://www.okta.com/au/identity-101/csrf-attack/">CSRF Attack: Cross-Site Request Forgery Definition & Defense</a>
+            </td>
+            <td style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: left;">
+                <li>A CSRF (cross-site request forgery) tricks authenticated users into granting malicious actors access through the authentic user's account.
+                <br>
+                <li>During a cross-site request forgery (CSRF) attack, a hacker does something under a victim's authentication.
+                <br>
+                <li>A user logs into a website, and somehow, that person's login does all sorts of things that the person would never do willingly. 
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://www.okta.com/au/identity-101/csrf-attack/">CSRF Attack: Cross-Site Request Forgery Definition & Defense</a>
+            </td>
+        </tr>
+
+
+        <!-- Web attack 5: Man-in-the-Middle (MitM) -->
+        <tr>
+            <td class="oddRow" style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center;">
+                5. Man-in-the-Middle (MitM)
+                <br>
+                <img src="Mitm.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://www.fortinet.com/resources/cyberglossary/man-in-the-middle-attack/">Man-in-the-Middle Attack: Types And Examples</a>
+            </td>
+            <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: left;">
+                <li>A man-in-the-middle (MitM) attack is a form of cyberattack in which criminals exploiting weak web-based protocols insert themselves between entities in a communication channel to steal data. 
+                <br>
+                <li>None of the parties sending email, texting, or chatting on a video call are aware that an attacker has inserted their presence into the conversation and that the attacker is stealing their data. 
+                <br>
+                <li>While most cyberattacks are silent and carried out without the victims' knowledge, some MitM attacks are the opposite.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://www.fortinet.com/resources/cyberglossary/man-in-the-middle-attack/">Man-in-the-Middle Attack: Types And Examples</a>
+            </td>
+        </tr>
+
+        <!-- Web attack 6: Session hijacking attack -->
+        <tr>
+            <td class="evenRow" style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center;">
+                6. Session hijacking attack
+                <br>
+                <img src="sessionhijacking.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://owasp.org/www-community/attacks/Session_hijacking_attack">Session hijacking attack</a>
+            </td>
+            <td style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: left;">
+                <li>The Session Hijacking attack consists of the exploitation of the web session control mechanism, which is normally managed for a session token.
+                <br>
+                <li>The most useful method depends on a token that the Web Server sends to the client browser after a successful client authentication.
+                <br>
+                <li>The Session Hijacking attack compromises the session token by stealing or predicting a valid session token to gain unauthorized access to the Web Server.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://owasp.org/www-community/attacks/Session_hijacking_attack">Session hijacking attack</a>
+            </td>
+        </tr>
+
+
+        <!-- Web attack 7: Phishing attack -->
+        <tr>
+            <td class="oddRow" style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center;">
+                7. Phishing attack 
+                <br>
+                <img src="Phishing.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://www.cloudflare.com/learning/access-management/phishing-attack/">What is a phishing attack?</a>
+            </td>
+            <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: left;">
+                <li>“Phishing” refers to an attempt to steal sensitive information, typically in the form of usernames, passwords, credit card numbers, bank account information or other important data in order to utilize or sell the stolen information. 
+                <br>
+                <li>By masquerading as a reputable source with an enticing request, an attacker lures in the victim in order to trick them, similarly to how a fisherman uses bait to catch a fish. 
+                <br>
+                <li>The most common examples of phishing are used to support other malicious actions, such as on-path attack and cross-site scripting attacks.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://www.cloudflare.com/learning/access-management/phishing-attack/">What is a phishing attack?</a>
+            </td>
+        </tr>
+
+        <!-- Web attack 8: Spoofing -->
+        <tr>
+            <td class="evenRow" style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center;">
+                8. Spoofing
+                <br>
+                <img src="spoofing.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://www.cisco.com/c/en/us/products/security/email-security/what-is-spoofing.html/">What Is Spoofing?</a>
+            </td>
+            <td style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: left;">
+                <li>Spoofing is a type of cybercriminal activity where someone or something forges the sender's information and pretends to be a legitimate source, business, colleague, or other trusted contact for the purpose of gaining access to personal information, acquiring money, spreading malware, or stealing data.
+                <br>
+                <li>The most common type of spoofing is done through email. Similar to phishing scams, spoofing emails can be hard to detect.
+                <br>
+                <li>Typically, a false sense of urgency is conveyed in the way spoofing attacks are written, which often is the reason why end users react to them.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://www.cisco.com/c/en/us/products/security/email-security/what-is-spoofing.html/">What Is Spoofing?</a>
+            </td>
+        </tr>
+
+         <!-- Web attack 9: XML external entity (XXE) injection-->
+         <tr>
+            <td class="oddRow" style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: center;">
+                9. XML external entity (XXE) injection
+                <br>
+                <img src="XXE.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://portswigger.net/web-security/xxe/">XML external entity (XXE) injection</a>
+            </td>
+            <td style="border-style: dashed; background-color: #cc000011; padding: 20px; text-align: left;">
+                <li>XML external entity injection (also known as XXE) is a web security vulnerability that allows an attacker to interfere with an application's processing of XML data. 
+                <br>
+                <li>It often allows an attacker to view files on the application server filesystem, and to interact with any back-end or external systems that the application itself can access.
+                <br>
+                <li>In some situations, an attacker can escalate an XXE attack to compromise the underlying server or other back-end infrastructure, by leveraging the XXE vulnerability to perform server-side request forgery (SSRF) attacks.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://portswigger.net/web-security/xxe/">XML external entity (XXE) injection</a>
+            </td>
+        </tr>
+
+
+        <!-- Web attack 10: Brute Force Attack -->
+        <tr>
+            <td class="evenRow" style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: center;">
+                10. Brute Force Attack 
+                <br>
+                <img src="BruteForceAttack.png" width="400px" alt="XSS">
+                <br>
+                Source: <a href="https://www.fortinet.com/resources/cyberglossary/brute-force-attack/">What Is A Brute Force Attack?</a>
+            </td>
+            <td style="border-style: dashed; background-color: #25cc0011; padding: 20px; text-align: left;">
+                <li>A brute force attack is a hacking method that uses trial and error to crack passwords, login credentials, and encryption keys.
+                <br>
+                <li>It is a simple yet reliable tactic for gaining unauthorized access to individual accounts and organizations’ systems and networks. 
+                <br>
+                <li>The hacker tries multiple usernames and passwords, often using a computer to test a wide range of combinations, until they find the correct login information.
+                <br>
+                <br>
+                <br>
+                Referrence: <a href="https://www.fortinet.com/resources/cyberglossary/brute-force-attack/">What Is A Brute Force Attack?</a>
+            </td>
+        </tr>
+    </table>
+    
+    
+    <!-- Task 4: Javascript with button -->
+
+        <h1>Task 4: Javascript with button</h1>
+
+        <!-- Buttons for selecting animals -->
+        <div>
+        <button id="catButton">Cat</button>
+        <button id="dogButton">Dog</button>
+        <button id="frogButton">Frog</button>
+        </div>
+
+        <!-- Text field to display message -->
+        <input type="text" id="textField" readonly>
+
+        <!-- Display messages below the text field -->
+        <div id="message2"></div>
+
+        <!-- Animal Images (Initially hidden) -->
+        <img id="catImage" class="animalImage" src="Cat.png" alt="Cat Image" style="display:none;">
+        <img id="dogImage" class="animalImage" src="Dog.png" alt="Dog Image" style="display:none;">
+        <img id="frogImage" class="animalImage" src="Frog.png" alt="Frog Image" style="display:none;">
+
+        <!-- CSS for Highlighting the Selected Button -->
+        <style>
+        .highlight {
+        background-color: #f0f0f0;
+        border: 2px solid red;
+        }
+        </style>
+
+        <!-- JavaScript for Interactivity -->
+        <script>
+        // Function to highlight the clicked button or image
+        function highlightElement(element) {
+        // Clear previous highlights from buttons
+        var buttons = document.querySelectorAll('button');
+        buttons.forEach(function(button) {
+            button.classList.remove('highlight');
+        });
+
+        // Apply the highlight to the clicked button
+        element.classList.add('highlight');
+        }
+
+        // Event listeners for button clicks
+        document.getElementById("catButton").addEventListener("click", function (event) {
+        displayAnimal("cat", "User clicks Cat", "Cat is clicked", event);
+        });
+
+        document.getElementById("dogButton").addEventListener("click", function (event) {
+        displayAnimal("dog", "User clicks Dog", "Dog is clicked", event);
+        });
+
+        document.getElementById("frogButton").addEventListener("click", function (event) {
+        displayAnimal("frog", "User clicks Frog", "Frog is clicked", event);
+        });
+
+        // Function to display the selected animal's message and image
+        function displayAnimal(animal, message1, message2, event) {
+        var messageDiv2 = document.getElementById("message2");
+        var textField = document.getElementById("textField");
+        var animalImage = document.getElementById(animal + "Image");
+
+        // Display the first message ("User clicks Cat", "User clicks Dog", etc.) in the text field
+        textField.value = message1;
+
+        // Display the second message ("Cat is clicked", "Dog is clicked", etc.) below the text field
+        messageDiv2.textContent = message2;
+
+        // Hide all animal images
+        var animalImages = document.querySelectorAll(".animalImage");
+        animalImages.forEach(function (img) {
+            img.style.display = "none";
+        });
+
+        // Show the selected animal image
+        animalImage.style.display = "block";
+
+        // Highlight the clicked button
+        highlightElement(event.target);
+        }  
+    </script>
+
+    <!-- Task 5: Github repository -->
+  
+      <h1>Task 5: Github repository</h1>
+       
+       <a href="https://github.com/your-username/website-source-code" target="_blank">View my report on GitHub</a>
+       <br>
+       <a href="https://www.fortinet.com/resources/cyberglossary/brute-force-attack/">View Github Repository</a> 
+    
+</body>
+</html>
